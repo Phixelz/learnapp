@@ -1,6 +1,6 @@
 ![App Cover](.github/cover.png)
 
-# Learnapp
+# LearnApp
 
 Learn App
 
