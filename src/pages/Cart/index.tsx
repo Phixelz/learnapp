@@ -39,7 +39,7 @@ export function Cart() {
       />
 
       <CustomButton
-        type="secondary"
+        color="secondary"
         title="Ir para pagamento"
       />
 
@@ -57,7 +57,7 @@ export function Cart() {
       </ProgramCard>
 
       <CustomButton
-        type="primary"
+        color="primary"
         title="Learn points insuficientes"
       />
     </Container>

@@ -67,10 +67,9 @@ export function SignIn({ navigation }: { navigation: any }) {
 
         <CustomButton
           onPress={() => navigation.navigate("Home")}
-          type="primary"
+          color="primary"
           title="Entrar"
         />
-
       </Wrapper>
     </Container>
   );
