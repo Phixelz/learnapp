@@ -19,14 +19,38 @@ function App() {
         screenOptions={{ headerShown: false }}
         initialRouteName="SignIn"
       >
-        <Stack.Screen name="SignIn" component={SignIn} />
-        <Stack.Screen name="Home" component={Home} />
-        <Stack.Screen name="Perfil" component={Perfil} />
-        <Stack.Screen name="Search" component={Search} />
-        <Stack.Screen name="LearnProgram" component={LearnProgram} />
-        <Stack.Screen name="Suggestions" component={Suggestions} />
-        <Stack.Screen name="Course" component={Course} />
-        <Stack.Screen name="Cart" component={Cart} />
+        <Stack.Screen
+          name="SignIn"
+          component={SignIn}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Home}
+        />
+        <Stack.Screen
+          name="Perfil"
+          component={Perfil}
+        />
+        <Stack.Screen
+          name="Search"
+          component={Search}
+        />
+        <Stack.Screen
+          name="LearnProgram"
+          component={LearnProgram}
+        />
+        <Stack.Screen
+          name="Suggestions"
+          component={Suggestions}
+        />
+        <Stack.Screen
+          name="Course"
+          component={Course}
+        />
+        <Stack.Screen
+          name="Cart"
+          component={Cart}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );
