@@ -1,6 +1,6 @@
 import styled from "styled-components/native";
-import { Home } from "react-native-feather";
-import { RFValue } from "react-native-responsive-fontsize";
+import { ArrowLeft, ChevronRight } from "react-native-feather";
+import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
   flex: 1;
@@ -9,9 +9,6 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-  justify-content: space-between;
-  flex-direction: row;
-  align-items: center;
   margin-bottom: 24px;
 `;
 
@@ -21,28 +18,39 @@ export const PerfilTitle = styled.Text`
   color: #373737;
 `;
 
-export const Icon = styled(Home)`
+export const Icon = styled(ArrowLeft)`
   font-size: ${RFValue(24)}px;
   color: #404040;
+`;
+
+export const Chevron = styled(ChevronRight)`
+  font-size: ${RFValue(24)}px;
+  color: #bebebe;
 `;
 
 export const UserArea = styled.View`
   align-items: center;
   flex-direction: row;
   padding: 0 0 24px;
-  border-bottom-width: 1px;
-  border-color: #dbdbdb;
   margin: 16px 0 0;
 `;
 
 export const User = styled.View``;
 
-export const Menu = styled.View`
-  margin: 16px 0 0;
-  padding: 0 0 24px;
+export const Divider = styled.View`
   border-bottom-width: 1px;
-  border-color: #dbdbdb;
+  border-color: #ebebeb;
+  margin-bottom: 24px;
 `;
+
+export const Menu = styled.View`
+  padding: 0 0 24px;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+`;
+
+export const Content = styled.View``;
 
 export const Title = styled.Text`
   font-size: 16px;

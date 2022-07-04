@@ -2,7 +2,6 @@ import React from "react";
 import {
   Container,
   Header,
-  PerfilTitle,
   Icon,
   Title,
   Subtitle,
@@ -10,20 +9,25 @@ import {
   UserArea,
   User,
   Avatar,
+  Divider,
+  Content,
+  Chevron,
 } from '../Perfil/styles';
 import { LearnCard } from "../../components/LearnCard";
+import { CustomButton } from "../../components/Button";
 export function Perfil({ navigation }: { navigation: any }) {
   return (
     <Container>
-
       <Header>
-        <PerfilTitle>
-          Perfil
-        </PerfilTitle>
         <Icon
           onPress={() => navigation.navigate("Home")}
         />
       </Header>
+
+      <LearnCard
+        programname="Learn Level"
+        subtitle="• Você está no nível 1"
+      />
 
       <UserArea>
         <Avatar
@@ -35,34 +39,53 @@ export function Perfil({ navigation }: { navigation: any }) {
           <Title>
             Rafaela Meireles
           </Title>
-
           <Subtitle>
             meireles.rafa@gmail.com
           </Subtitle>
         </User>
       </UserArea>
 
-      <Menu>
-        <Title>Torne-se um educador</Title>
-        <Subtitle>Transforme a vida de alguém.</Subtitle>
-      </Menu>
+      <Divider />
 
       <Menu>
-        <Title>Alterar tema</Title>
-        <Subtitle>
-          Clique para alterar o tema do app
-        </Subtitle>
+        <Content>
+          <Title>
+            Torne-se um educador
+          </Title>
+          <Subtitle>
+            Transforme a vida de alguém.
+          </Subtitle>
+        </Content>
+        <Chevron />
       </Menu>
+
+      <Divider />
 
       <Menu>
-        <Title>Configurações</Title>
-        <Subtitle>Ative e desative recursos</Subtitle>
+        <Content>
+          <Title>
+            Alterar tema
+          </Title>
+          <Subtitle>
+            Clique para alterar o tema do app
+          </Subtitle>
+        </Content>
+        <Chevron />
       </Menu>
 
-      <LearnCard
-        programname="Learn Level"
-        subtitle="• Você está no nível 1"
-      />
+      <Divider />
+
+      <Menu>
+        <Content>
+          <Title>
+            Configurações
+          </Title>
+          <Subtitle>
+            Ative e desative recursos
+          </Subtitle>
+        </Content>
+        <Chevron />
+      </Menu>
     </Container>
   );
 }

@@ -3,7 +3,6 @@ import { CustomButton } from "../../components/Button";
 import { Card } from "../../components/Card";
 import {
   Container,
-  CartTitle,
   Header,
   Section,
   CartItem,
@@ -20,9 +19,6 @@ export function Cart() {
     <Container>
       <Header>
         <Icon />
-        <CartTitle>
-          Carrinho
-        </CartTitle>
       </Header>
 
       <Section>
@@ -43,7 +39,7 @@ export function Cart() {
       />
 
       <CustomButton
-        type="primary"
+        type="secondary"
         title="Ir para pagamento"
       />
 
@@ -61,7 +57,7 @@ export function Cart() {
       </ProgramCard>
 
       <CustomButton
-        type="secondary"
+        type="primary"
         title="Learn points insuficientes"
       />
     </Container>

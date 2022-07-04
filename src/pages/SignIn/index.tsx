@@ -2,12 +2,12 @@ import React from "react";
 import { useState } from "react";
 import auth from "@react-native-firebase/auth";
 import {
-  View,
   Alert,
 } from "react-native";
 
 import {
   Container,
+  Header,
   Title,
   Illustration,
   Wrapper,
@@ -33,11 +33,11 @@ export function SignIn({ navigation }: { navigation: any }) {
 
   return (
     <Container>
-      <View>
+      <Header>
         <Title>
-          Learn
+          Learn.
         </Title>
-      </View>
+      </Header>
 
       <Wrapper>
         <Illustration
@@ -67,9 +67,10 @@ export function SignIn({ navigation }: { navigation: any }) {
 
         <CustomButton
           onPress={() => navigation.navigate("Home")}
-          type="default"
+          type="primary"
           title="Entrar"
         />
+
       </Wrapper>
     </Container>
   );

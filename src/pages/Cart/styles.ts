@@ -14,15 +14,7 @@ export const Icon = styled(ArrowLeft)`
   margin: 0 12px 0 0;
 `;
 
-export const CartTitle = styled.Text`
-  font-size: 22px;
-  font-weight: 700;
-  color: #373737;
-`;
-
 export const Header = styled.View`
-  flex-direction: row;
-  align-items: center;
   margin-bottom: 32px;
 `;
 
@@ -40,7 +32,7 @@ export const CartItem = styled.Text`
 `;
 
 export const ButtonRemove = styled.Text`
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 600;
   color: #cc4c4d;
 `;
@@ -60,14 +52,14 @@ export const ProgramCard = styled.View`
   margin-bottom: 12px;
 `;
 
-export const ProgramSubtitle= styled.Text`
+export const ProgramSubtitle = styled.Text`
   font-size: 16px;
   font-weight: 400;
   color: #909090;
   margin: 4px;
 `;
 
-export const ProgramTitle= styled.Text`
+export const ProgramTitle = styled.Text`
   font-size: 18px;
   font-weight: 700;
   color: #373737;

@@ -33,6 +33,11 @@ export const TextInput = styled.TextInput`
   margin-bottom: 16px;
 `;
 
+export const TagsView = styled.ScrollView.attrs({
+  horizontal: true,
+})`
+`;
+
 export const Tags = styled.View`
   flex-direction: row;
   flex-wrap: nowrap;
