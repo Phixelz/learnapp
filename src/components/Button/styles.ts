@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native';
 
 interface ButtonProps {
-  type: 'default' | 'pagament' | 'learn';
+  type: 'default' | 'primary' | 'secondary';
 }
 
 export const Button = styled.TouchableOpacity<ButtonProps>`
@@ -13,11 +13,11 @@ export const Button = styled.TouchableOpacity<ButtonProps>`
   background-color: #16BBB0;
   `}
 
-  ${(props) => props.type === 'pagament' && css `
+  ${(props) => props.type === 'primary' && css `
   background-color: #373737;
   `}
 
-  ${(props) => props.type === 'learn' && css `
+  ${(props) => props.type === 'secondary' && css `
   background-color: #16BBB0;
   `}
 `;

@@ -1,12 +1,11 @@
 import React from 'react';
-import { EyeOff } from 'react-native-feather';
 import {
     Button,
     ButtonText,
 } from '../Button/styles';
 
 interface Props {
-    type: 'default' | 'pagament' | 'learn';
+    type: 'default' | 'primary' | 'secondary';
     title: string;
 }
 
