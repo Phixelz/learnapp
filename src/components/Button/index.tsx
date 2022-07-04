@@ -6,21 +6,24 @@ import {
 } from '../Button/styles';
 
 interface Props extends TouchableOpacityProps {
-    type: 'primary' | 'secondary';
+    color: 'primary' | 'secondary';
     title: string;
 }
 
 export function CustomButton({
     title,
-    type,
+    color,
 }: Props) {
     return (
-        <Button 
+        <Button
             activeOpacity={0.9}
-            type={type}>
+            color={color}>
             <ButtonText>
                 {title}
             </ButtonText>
         </Button>
     )
+    
 }
+
+
