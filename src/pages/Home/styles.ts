@@ -38,13 +38,7 @@ export const TextInput = styled.TextInput`
   margin-bottom: 16px;
 `;
 
-export const HorizontalCards = styled.ScrollView.attrs({
-  showsHorizontalScrollIndicator: false,
-  horizontal: true,
-})`
-`;
-
-export const Section = styled.KeyboardAvoidingView`
+export const Section = styled.View`
   justify-content: space-between;
   flex-direction: row;
   margin-bottom: 12px;

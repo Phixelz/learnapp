@@ -17,7 +17,6 @@ import {
   Section,
   SectionName,
   ViewAll,
-  HorizontalCards,
 } from '../Home/styles';
 
 export function Home({ navigation }: { navigation: any }) {
@@ -63,7 +62,8 @@ export function Home({ navigation }: { navigation: any }) {
         placeholderTextColor="#949494"
         autoCorrect={true}
       />
-      <ScrollView>
+      <ScrollView
+        showsVerticalScrollIndicator={false}>
         <TouchableOpacity
           onPress={() => navigation.navigate("LearnProgram")}
           activeOpacity={0.8}
