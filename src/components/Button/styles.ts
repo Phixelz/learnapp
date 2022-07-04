@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components/native';
 
 interface ButtonProps {
-  type: 'default' | 'primary' | 'secondary';
+  type: 'primary' | 'secondary';
 }
 
 export const Button = styled.TouchableOpacity<ButtonProps>`
@@ -9,16 +9,12 @@ export const Button = styled.TouchableOpacity<ButtonProps>`
   align-items: center;
   border-radius: 12px;
 
-  ${(props) => props.type === 'default' && css `
-  background-color: #16BBB0;
-  `}
-
   ${(props) => props.type === 'primary' && css `
-  background-color: #373737;
+  background-color: #16BBB0;
   `}
 
   ${(props) => props.type === 'secondary' && css `
-  background-color: #16BBB0;
+  background-color: #373737;
   `}
 `;
 

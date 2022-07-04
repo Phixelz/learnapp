@@ -1,11 +1,12 @@
 import React from 'react';
+import { TouchableOpacityProps } from 'react-native';
 import {
     Button,
     ButtonText,
 } from '../Button/styles';
 
-interface Props {
-    type: 'default' | 'primary' | 'secondary';
+interface Props extends TouchableOpacityProps {
+    type: 'primary' | 'secondary';
     title: string;
 }
 
@@ -14,7 +15,7 @@ export function CustomButton({
     type,
 }: Props) {
     return (
-        <Button
+        <Button 
             activeOpacity={0.9}
             type={type}>
             <ButtonText>
