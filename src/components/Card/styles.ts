@@ -2,7 +2,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import styled, { css } from 'styled-components/native';
 
 interface CardProps {
-  type: 'horizontal' | 'vertical';
+  type: 'horizontal' | 'default';
 }
 
 export const Container = styled.TouchableOpacity<CardProps>`
@@ -11,14 +11,14 @@ export const Container = styled.TouchableOpacity<CardProps>`
   border-radius: 8px;
   border-width: 1px;
   border-color: #f1f1f1;
+  margin-bottom: 16px;
 
   ${(props) => props.type === 'horizontal' && css `
-  width: ${RFValue(260)}px;
+  width: ${RFValue(250)}px;
   margin-right: 16px;
  `}
 
- ${(props) => props.type = 'vertical' && css `
- margin-bottom: 16px;
+ ${(props) => props.type === 'default' && css `
  `}
 `;
 
@@ -33,6 +33,7 @@ export const InstructorName = styled.Text`
   font-size: 16px;
   font-weight: 400;
   color: #999999;
+  
 `;
 
 export const PriceDefault = styled.Text`

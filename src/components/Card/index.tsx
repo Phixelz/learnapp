@@ -10,7 +10,7 @@ import {
 } from "../Card/styles";
 
 interface CardProps extends TouchableProps {
-  type: "horizontal" | "vertical";
+  type: "horizontal" | "default";
   cardtitle: string;
   instructorname: string;
   pricedefault: string;
@@ -40,9 +40,11 @@ export function Card({
       <PriceDefault>
         {pricedefault}
       </PriceDefault>
-      
+
       <Footer>
-        <Tag>{tag}</Tag>
+        <Tag>
+          {tag}
+        </Tag>
       </Footer>
     </Container>
   );
