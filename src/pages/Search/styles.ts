@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
 import { ShoppingCart } from "react-native-feather";
-import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
   flex: 1;
@@ -24,7 +23,6 @@ export const TextInput = styled.TextInput`
 `;
 
 export const Icon = styled(ShoppingCart)`
-  font-size: ${RFValue(24)}px;
   color: #404040;
 `;
 

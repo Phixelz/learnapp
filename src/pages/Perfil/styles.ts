@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
 import { ArrowLeft, ChevronRight } from "react-native-feather";
-import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
   flex: 1;
@@ -9,7 +8,7 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-  margin-bottom: 24px;
+margin-bottom: 24px;
 `;
 
 export const PerfilTitle = styled.Text`
@@ -19,23 +18,24 @@ export const PerfilTitle = styled.Text`
 `;
 
 export const Icon = styled(ArrowLeft)`
-  font-size: ${RFValue(24)}px;
   color: #404040;
 `;
 
 export const Chevron = styled(ChevronRight)`
-  font-size: ${RFValue(24)}px;
   color: #bebebe;
 `;
 
 export const UserArea = styled.View`
   align-items: center;
   flex-direction: row;
-  padding: 0 0 24px;
-  margin: 16px 0 0;
+  padding: 24px 24px;
+  margin-bottom: 24px;
+  background-color: #efefefef;
+  border-radius: 12px;
 `;
 
-export const User = styled.View``;
+export const User = styled.View`
+`;
 
 export const Divider = styled.View`
   border-bottom-width: 1px;
@@ -43,7 +43,9 @@ export const Divider = styled.View`
   margin-bottom: 24px;
 `;
 
-export const Menu = styled.View`
+export const Menu = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})`
   padding: 0 0 24px;
   flex-direction: row;
   justify-content: space-between;

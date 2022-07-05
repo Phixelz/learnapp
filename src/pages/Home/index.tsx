@@ -106,36 +106,22 @@ export function Home({ navigation }: { navigation: any }) {
         </Section>
 
         <Card
-          type="vertical"
+          type="default"
           cardtitle="UX Design"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
-          type="vertical"
+          type="default"
           cardtitle="UX Research"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
-          type="vertical"
+          type="default"
           cardtitle="Product Design"
-          instructorname="Rayna Curtis"
-          pricedefault="R$ 27,90"
-          tag="Programa Learn"
-        />
-        <Card
-          type="vertical"
-          cardtitle="ReactJS"
-          instructorname="Rayna Curtis"
-          pricedefault="R$ 27,90"
-          tag="Programa Learn"
-        />
-        <Card
-          type="vertical"
-          cardtitle="React Native"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"

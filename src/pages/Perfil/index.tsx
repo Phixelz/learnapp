@@ -23,11 +23,6 @@ export function Perfil({ navigation }: { navigation: any }) {
         />
       </Header>
 
-      <LearnCard
-        programname="Learn Level"
-        subtitle="• Você está no nível 1"
-      />
-
       <UserArea>
         <Avatar
           resizeMode="cover"
@@ -39,8 +34,6 @@ export function Perfil({ navigation }: { navigation: any }) {
           <Subtitle>meireles.rafa@gmail.com</Subtitle>
         </User>
       </UserArea>
-
-      <Divider />
 
       <Menu>
         <Content>
@@ -69,6 +62,11 @@ export function Perfil({ navigation }: { navigation: any }) {
         </Content>
         <Chevron />
       </Menu>
+
+      <LearnCard
+        programname="Learn Level"
+        subtitle="• Você está no nível 1"
+      />
     </Container>
   );
 }

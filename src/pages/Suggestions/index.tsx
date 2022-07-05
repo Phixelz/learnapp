@@ -3,31 +3,37 @@ import {
   Container,
   Header,
   Icon,
+  IconLeft,
   SuggestionsTitle,
+  Wrapper,
   TextInput,
   TagsView,
   Tags,
+  BackHome,
 } from "../Suggestions/styles";
 import { Card } from "../../components/Card";
 import { Tag } from "../../components/Tag";
-import { ScrollView } from "react-native-gesture-handler";
 
 export function Suggestions({ navigation }: { navigation: any }) {
   return (
     <Container>
       <Header>
-        <SuggestionsTitle>Sugestões para você</SuggestionsTitle>
-        <Icon onPress={() => navigation.navigate("Cart")} />
+        <IconLeft>
+          <BackHome onPress={() => navigation.navigate("Home")}
+          />
+          <SuggestionsTitle>Sugestões para você</SuggestionsTitle>
+        </IconLeft>
+        <Icon
+        />
       </Header>
 
-      <ScrollView showsVerticalScrollIndicator={false}>
+      <Wrapper>
         <TextInput
           placeholder="O que você quer aprender?"
           placeholderTextColor="#949494"
         />
 
-        <TagsView 
-        showsHorizontalScrollIndicator={false}>
+        <TagsView>
           <Tags>
             <Tag tagtitle="UX Design" />
             <Tag tagtitle="UI Design" />
@@ -39,41 +45,41 @@ export function Suggestions({ navigation }: { navigation: any }) {
         </TagsView>
 
         <Card
-          type="vertical"
+          type="default"
           cardtitle="UX Design"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
-          type="vertical"
+          type="default"
           cardtitle="UX Research"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
-          type="vertical"
+          type="default"
           cardtitle="Product Design"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
-          type="vertical"
+          type="default"
           cardtitle="ReactJS"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
-          type="vertical"
+          type="default"
           cardtitle="React Native"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
-      </ScrollView>
+      </Wrapper>
     </Container>
   );
 }
