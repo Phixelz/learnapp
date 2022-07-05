@@ -5,7 +5,7 @@ import {
     ButtonText,
 } from '../Button/styles';
 
-interface Props extends TouchableOpacityProps {
+interface ButtonProps extends TouchableOpacityProps {
     color: 'primary' | 'secondary';
     title: string;
 }
@@ -13,7 +13,7 @@ interface Props extends TouchableOpacityProps {
 export function CustomButton({
     title,
     color,
-}: Props) {
+}: ButtonProps) {
     return (
         <Button
             activeOpacity={0.9}
@@ -23,7 +23,6 @@ export function CustomButton({
             </ButtonText>
         </Button>
     )
-    
 }
 
 

@@ -5,15 +5,15 @@ interface ButtonProps {
 }
 
 export const Button = styled.TouchableOpacity<ButtonProps>`
-  padding: 16px 24px;
+  padding: 16px;
   align-items: center;
   border-radius: 12px;
 
-  ${(props) => props.color === 'primary' && css `
+  ${(props) => props.color == 'primary' && css `
   background-color: #16BBB0;
   `}
 
-  ${(props) => props.color === 'secondary' && css `
+  ${(props) => props.color == 'secondary' && css `
   background-color: #373737;
   `}
 `;

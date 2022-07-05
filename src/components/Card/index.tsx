@@ -1,4 +1,5 @@
 import React from "react";
+import { TouchableProps } from "react-native-svg";
 import {
   Container,
   CardTitle,
@@ -40,8 +41,8 @@ import {
 //   },
 // ];
 
-
-interface Props {
+interface CardProps extends TouchableProps {
+  type: "horizontal" | "vertical";
   cardtitle: string;
   instructorname: string;
   pricedefault: string;
@@ -49,12 +50,17 @@ interface Props {
 }
 
 export function Card({
+  type,
   cardtitle,
   instructorname,
   pricedefault,
-  tag }: Props) {
+  tag,
+}: CardProps) {
   return (
-    <Container>
+    <Container
+      activeOpacity={0.8}
+      type={type}>
+
       <CardTitle>
         {cardtitle}
       </CardTitle>
@@ -66,14 +72,9 @@ export function Card({
       <PriceDefault>
         {pricedefault}
       </PriceDefault>
-
       <Footer>
-        <Tag>
-          {tag}
-        </Tag>
+        <Tag>{tag}</Tag>
       </Footer>
     </Container>
   );
 }
-
-

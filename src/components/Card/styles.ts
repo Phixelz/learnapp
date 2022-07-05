@@ -1,13 +1,27 @@
-import styled from 'styled-components/native';
-export const Container = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.8,
-})`
+import { RFValue } from 'react-native-responsive-fontsize';
+import styled, { css } from 'styled-components/native';
+
+interface CardProps {
+  type: 'horizontal' | 'vertical';
+}
+
+export const Container = styled.TouchableOpacity<CardProps>`
   padding: 16px 16px;
   background-color: #fff;
   border-radius: 8px;
-  margin-bottom: 12px;
   border-width: 1px;
   border-color: #f1f1f1;
+
+
+  ${(props) => props.type === 'horizontal' && css `
+  width: ${RFValue(260)}px;
+  margin-right: 16px;
+  
+ `}
+
+ ${(props) => props.type = 'vertical' && css `
+ margin-bottom: 16px;
+ `}
 `;
 
 export const CardTitle = styled.Text`
