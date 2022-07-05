@@ -12,11 +12,9 @@ export const Container = styled.TouchableOpacity<CardProps>`
   border-width: 1px;
   border-color: #f1f1f1;
 
-
   ${(props) => props.type === 'horizontal' && css `
   width: ${RFValue(260)}px;
   margin-right: 16px;
-  
  `}
 
  ${(props) => props.type = 'vertical' && css `
