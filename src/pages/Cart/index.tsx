@@ -14,11 +14,13 @@ import {
   ProgramSubtitle,
 } from "./styles";
 
-export function Cart() {
+export function Cart({ navigation }: { navigation: any }) {
   return (
     <Container>
       <Header>
-        <Icon />
+        <Icon
+          onPress={() => navigation.navigate("Course")}
+        />
       </Header>
 
       <Section>

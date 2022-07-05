@@ -1,3 +1,4 @@
+import { ChevronRight } from "react-native-feather";
 import styled from "styled-components/native";
 
 export const Container = styled.View`
@@ -10,7 +11,7 @@ export const Header = styled.View`
   align-items: center;
   flex-direction: row;
   margin-bottom: 16px;
-  justify-content: space-between ;
+  justify-content: space-between;
 `;
 
 export const Grettings = styled.Text`
@@ -50,9 +51,6 @@ export const SectionName = styled.Text`
   color: #373737;
 `;
 
-export const ViewAll = styled.Text`
-  align-self: flex-end;
-  font-size: 16px;
-  font-weight: 500;
-  color: #16bbb0;
+export const Chevron = styled(ChevronRight)`
+  color: #373737;
 `;

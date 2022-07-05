@@ -2,11 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import { LearnCard } from "../../components/LearnCard";
 import { Card } from "../../components/Card";
-import {
-  View,
-  TouchableOpacity,
-  ScrollView,
-} from "react-native";
+import { View, TouchableOpacity, ScrollView } from "react-native";
 import {
   Container,
   Header,
@@ -16,8 +12,8 @@ import {
   TextInput,
   Section,
   SectionName,
-  ViewAll,
-} from '../Home/styles';
+  Chevron,
+} from "../Home/styles";
 
 export function Home({ navigation }: { navigation: any }) {
   const [grettings, setgrettings] = useState("");
@@ -37,12 +33,8 @@ export function Home({ navigation }: { navigation: any }) {
     <Container>
       <Header>
         <View>
-          <Grettings>
-            {grettings}
-          </Grettings>
-          <Title>
-            Rafaela Meireles
-          </Title>
+          <Grettings>{grettings}</Grettings>
+          <Title>Rafaela Meireles</Title>
         </View>
 
         <TouchableOpacity
@@ -60,10 +52,8 @@ export function Home({ navigation }: { navigation: any }) {
         onPressIn={() => navigation.navigate("Search")}
         placeholder="O que você quer aprender?"
         placeholderTextColor="#949494"
-        autoCorrect={true}
       />
-      <ScrollView
-        showsVerticalScrollIndicator={false}>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <TouchableOpacity
           onPress={() => navigation.navigate("LearnProgram")}
           activeOpacity={0.8}
@@ -75,50 +65,82 @@ export function Home({ navigation }: { navigation: any }) {
         </TouchableOpacity>
 
         <Section>
-          <SectionName>
-            Sugestões para você
-          </SectionName>
+          <SectionName>Populares</SectionName>
+          <TouchableOpacity activeOpacity={0.8}>
+            <Chevron />
+          </TouchableOpacity>
+        </Section>
+
+        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+          <Card
+            type="horizontal"
+            cardtitle="React Native"
+            instructorname="Rayna Curtis"
+            pricedefault="R$ 27,90"
+            tag="Programa Learn"
+          />
+          <Card
+            type="horizontal"
+            cardtitle="ReactJS"
+            instructorname="Rayna Curtis"
+            pricedefault="R$ 27,90"
+            tag="Programa Learn"
+          />
+          <Card
+            type="horizontal"
+            cardtitle="Styled Components"
+            instructorname="Rayna Curtis"
+            pricedefault="R$ 27,90"
+            tag="Programa Learn"
+          />
+        </ScrollView>
+
+        <Section>
+          <SectionName>Sugestões para você</SectionName>
           <TouchableOpacity
             activeOpacity={0.8}
             onPress={() => navigation.navigate("Suggestions")}
           >
-            <ViewAll>
-              Ver todos
-            </ViewAll>
+            <Chevron />
           </TouchableOpacity>
         </Section>
 
         <Card
+          type="vertical"
           cardtitle="UX Design"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
+          type="vertical"
           cardtitle="UX Research"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
+          type="vertical"
           cardtitle="Product Design"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
+          type="vertical"
           cardtitle="ReactJS"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
         <Card
+          type="vertical"
           cardtitle="React Native"
           instructorname="Rayna Curtis"
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
       </ScrollView>
-    </Container >
+    </Container>
   );
 }

@@ -12,9 +12,8 @@ import {
   Divider,
   Content,
   Chevron,
-} from '../Perfil/styles';
+} from "../Perfil/styles";
 import { LearnCard } from "../../components/LearnCard";
-import { CustomButton } from "../../components/Button";
 export function Perfil({ navigation }: { navigation: any }) {
   return (
     <Container>
@@ -36,12 +35,8 @@ export function Perfil({ navigation }: { navigation: any }) {
         />
 
         <User>
-          <Title>
-            Rafaela Meireles
-          </Title>
-          <Subtitle>
-            meireles.rafa@gmail.com
-          </Subtitle>
+          <Title>Rafaela Meireles</Title>
+          <Subtitle>meireles.rafa@gmail.com</Subtitle>
         </User>
       </UserArea>
 
@@ -49,12 +44,8 @@ export function Perfil({ navigation }: { navigation: any }) {
 
       <Menu>
         <Content>
-          <Title>
-            Torne-se um educador
-          </Title>
-          <Subtitle>
-            Transforme a vida de alguém.
-          </Subtitle>
+          <Title>Torne-se um educador</Title>
+          <Subtitle>Transforme a vida de alguém.</Subtitle>
         </Content>
         <Chevron />
       </Menu>
@@ -63,12 +54,8 @@ export function Perfil({ navigation }: { navigation: any }) {
 
       <Menu>
         <Content>
-          <Title>
-            Alterar tema
-          </Title>
-          <Subtitle>
-            Clique para alterar o tema do app
-          </Subtitle>
+          <Title>Alterar tema</Title>
+          <Subtitle>Clique para alterar o tema do app</Subtitle>
         </Content>
         <Chevron />
       </Menu>
@@ -77,16 +64,11 @@ export function Perfil({ navigation }: { navigation: any }) {
 
       <Menu>
         <Content>
-          <Title>
-            Configurações
-          </Title>
-          <Subtitle>
-            Ative e desative recursos
-          </Subtitle>
+          <Title>Configurações</Title>
+          <Subtitle>Ative e desative recursos</Subtitle>
         </Content>
         <Chevron />
       </Menu>
     </Container>
   );
 }
-

@@ -58,6 +58,7 @@ export function LearnProgram({ navigation }: { navigation: any }) {
         </Description>
 
         <Card
+          type="vertical"
           cardtitle="UI Design "
           instructorname="Rayna Curtis"
           pricedefault="R$: 27,90"

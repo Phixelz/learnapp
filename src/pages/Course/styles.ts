@@ -1,13 +1,27 @@
 import styled from "styled-components/native";
-import { Check, Star } from "react-native-feather";
+import { Check, Star, ShoppingCart, Share2, ArrowLeft,} from "react-native-feather";
 import { RFValue } from "react-native-responsive-fontsize";
 
 export const Container = styled.View`
-flex: 1;
+  flex: 1;
   background-color: #ffffff;
 `;
 
 export const Header = styled.View`
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+`;
+
+export const Icons = styled.View`
+  flex-direction: row;
+`;
+
+export const MainTitle = styled.Text`
+  font-size: 22px;
+  font-weight: 700;
+  color: #373737;
 `;
 
 export const Wrapper = styled.View`
@@ -50,7 +64,7 @@ export const Avatar = styled.Image`
   width: ${RFValue(48)}px;
   height: ${RFValue(48)}px;
   border-radius: 50px;
-  margin: 0 12px 0 0;
+  margin: 0 12px;
 `;
 
 export const CourseImage = styled.Image`
@@ -91,8 +105,8 @@ export const Price = styled.Text`
 `;
 
 export const Checks = styled.View`
-align-items: flex-start;
-flex-direction: row;
+  align-items: flex-start;
+  flex-direction: row;
 `;
 
 export const LearnTo = styled.Text`
@@ -102,7 +116,6 @@ export const LearnTo = styled.Text`
 `;
 
 export const Icon = styled(Check)`
-  font-size: ${RFValue(24)}px;
   color: #16bbb0;
   margin-right: 4px;
 `;
@@ -110,6 +123,19 @@ export const Icon = styled(Check)`
 export const Ratings = styled(Star)`
   color: #fbbc05;
   margin-right: 4px;
+`;
+
+export const Arrow = styled(ArrowLeft)`
+  color: #373737;
+`;
+
+export const Cart = styled(ShoppingCart)`
+  color: #373737;
+`;
+
+export const Share = styled(Share2)`
+  color: #373737;
+  margin-right: 24px;
 `;
 
 export const DividerFooter = styled.View`
