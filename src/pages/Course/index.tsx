@@ -1,8 +1,12 @@
 import React from "react";
-import { View, ScrollView } from "react-native";
+import {
+  View,
+  ScrollView
+} from "react-native";
 import { CustomButton } from "../../components/Button";
 import {
   Container,
+  CourseName,
   CourseImage,
   Header,
   RatingsView,
@@ -48,13 +52,14 @@ export function Course({ navigation }: { navigation: any }) {
               uri: "https://media.istockphoto.com/photos/web-designer-planning-website-ux-app-development-with-marker-pen-picture-id1172202165?k=20&m=1172202165&s=612x612&w=0&h=M33V4tdNYiw3fqCcZj2lcUyKvvzEyMTNwC6FAXYpXOw=",
             }}
           />
-          <CourseTitle>UX Design - User Experience</CourseTitle>
+          <CourseName>
+            <CourseTitle>UX Design - User Experience</CourseTitle>
+            <RatingsView>
+              <Ratings fill="#FBBC05" width={16} />
+              <RatingsNumber>4.5</RatingsNumber>
+            </RatingsView>
+          </CourseName>
           <InstructorName>Thilak Sundaram</InstructorName>
-
-          <RatingsView>
-            <Ratings fill="#FBBC05" />
-            <RatingsNumber>4.5</RatingsNumber>
-          </RatingsView>
 
           <Divider />
 
@@ -116,6 +121,7 @@ export function Course({ navigation }: { navigation: any }) {
 
       <Footer>
         <Price>R$ 27,90</Price>
+
         <CustomButton
           color="primary"
           title="Adicionar ao carrinho"

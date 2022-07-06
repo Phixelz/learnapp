@@ -14,14 +14,14 @@ export const Header = styled.View`
   margin-bottom: 24px;
 `;
 
-export const Icons = styled.View`
+export const CourseName = styled.View`
   flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 `;
 
-export const MainTitle = styled.Text`
-  font-size: 22px;
-  font-weight: 700;
-  color: #373737;
+export const Icons = styled.View`
+  flex-direction: row;
 `;
 
 export const Wrapper = styled.View`
@@ -29,14 +29,14 @@ export const Wrapper = styled.View`
 `;
 
 export const Title = styled.Text`
-  font-size: 17px;
+  font-size: 16px;
   font-weight: 700;
   color: #373737;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 `;
 
 export const Description = styled.Text`
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 400;
   color: #999999;
   margin-bottom: 24px;
@@ -64,7 +64,7 @@ export const Avatar = styled.Image`
   width: ${RFValue(48)}px;
   height: ${RFValue(48)}px;
   border-radius: 50px;
-  margin: 0 12px;
+  margin-right: 12px;
 `;
 
 export const CourseImage = styled.Image`
@@ -74,7 +74,6 @@ export const CourseImage = styled.Image`
 `;
 
 export const RatingsView = styled.View`
-  margin-top: 8px;
   align-items: center;
   flex-direction: row;
 `;
@@ -96,12 +95,6 @@ export const CourseTitle = styled.Text`
   font-weight: 700;
   color: #373737;
   margin-bottom: 4px;
-`;
-
-export const Price = styled.Text`
-  font-size: 20px;
-  font-weight: 700;
-  color: #373737;
 `;
 
 export const Checks = styled.View`
@@ -142,6 +135,12 @@ export const DividerFooter = styled.View`
   margin: 0 0 24px 0;
   border-bottom-width: 1px;
   border-color: #dbdbdb;
+`;
+
+export const Price = styled.Text`
+  font-size: 20px;
+  font-weight: 700;
+  color: #373737;
 `;
 
 export const Footer = styled.View`

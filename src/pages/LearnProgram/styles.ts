@@ -1,6 +1,5 @@
 import styled from "styled-components/native";
-import { Home } from "react-native-feather";
-import { RFValue } from "react-native-responsive-fontsize";
+import { ArrowLeft } from "react-native-feather";
 
 export const Container = styled.View`
   flex: 1;
@@ -9,20 +8,19 @@ export const Container = styled.View`
 `;
 
 export const Header = styled.View`
-  justify-content: space-between;
   flex-direction: row;
   align-items: center;
   margin-bottom: 24px;
 `;
 
 export const ProgramTitle = styled.Text`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #373737;
+  margin-left: 12px;
 `;
 
-export const Icon = styled(Home)`
-  font-size: ${RFValue(24)}px;
+export const Icon = styled(ArrowLeft)`
   color: #404040;
 `;
 

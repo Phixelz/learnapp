@@ -11,15 +11,17 @@ export const Header = styled.View`
   flex-direction: row;
   margin-bottom: 24px;
   justify-content: space-between;
+  align-items: center;
 `;
 
 export const IconLeft = styled.View`
 flex-direction: row;
+align-items: center;
 `;
 
 export const SuggestionsTitle = styled.Text`
   align-self: center;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: #373737;
 `;

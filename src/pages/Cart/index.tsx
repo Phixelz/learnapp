@@ -34,7 +34,8 @@ export function Cart({ navigation }: { navigation: any }) {
       </Section>
 
       <Card
-        cardtitle="UX Design - Experiência do Usuário"
+        type="default"
+        cardtitle="UI Design - User Interface"
         instructorname="Thilak Sundaram"
         pricedefault="R$: 27,90"
         tag="Programa Learn"

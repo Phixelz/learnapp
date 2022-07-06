@@ -1,19 +1,25 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { LearnCard } from "../../components/LearnCard";
-import { Card } from "../../components/Card";
-import { View, TouchableOpacity, ScrollView } from "react-native";
 import {
   Container,
   Header,
+  Perfil,
+  GrettingsView,
   Grettings,
   Avatar,
   Title,
+  Wrapper,
   TextInput,
+  LearnProgram,
+  Populares,
+  Suggestions,
   Section,
+  HorizontalCards,
   SectionName,
   Chevron,
 } from "../Home/styles";
+import { LearnCard } from "../../components/LearnCard";
+import { Card } from "../../components/Card";
 
 export function Home({ navigation }: { navigation: any }) {
   const [grettings, setgrettings] = useState("");
@@ -32,20 +38,19 @@ export function Home({ navigation }: { navigation: any }) {
   return (
     <Container>
       <Header>
-        <View>
+        <GrettingsView>
           <Grettings>{grettings}</Grettings>
           <Title>Rafaela Meireles</Title>
-        </View>
+        </GrettingsView>
 
-        <TouchableOpacity
-          activeOpacity={0.8}
+        <Perfil
           onPress={() => navigation.navigate("Perfil")}
         >
           <Avatar
             resizeMode="cover"
             source={require("../../assets/avatar.png")}
           />
-        </TouchableOpacity>
+        </Perfil>
       </Header>
 
       <TextInput
@@ -53,25 +58,25 @@ export function Home({ navigation }: { navigation: any }) {
         placeholder="O que você quer aprender?"
         placeholderTextColor="#949494"
       />
-      <ScrollView showsVerticalScrollIndicator={false}>
-        <TouchableOpacity
+
+      <Wrapper>
+        <LearnProgram
           onPress={() => navigation.navigate("LearnProgram")}
-          activeOpacity={0.8}
         >
           <LearnCard
             programname="Programa Learn"
             subtitle="Programa de incentivo Learn"
           />
-        </TouchableOpacity>
+        </LearnProgram>
 
         <Section>
           <SectionName>Populares</SectionName>
-          <TouchableOpacity activeOpacity={0.8}>
+          <Populares>
             <Chevron />
-          </TouchableOpacity>
+          </Populares>
         </Section>
 
-        <ScrollView horizontal={true} showsHorizontalScrollIndicator={false}>
+        <HorizontalCards>
           <Card
             type="horizontal"
             cardtitle="React Native"
@@ -93,16 +98,15 @@ export function Home({ navigation }: { navigation: any }) {
             pricedefault="R$ 27,90"
             tag="Programa Learn"
           />
-        </ScrollView>
+        </HorizontalCards>
 
         <Section>
           <SectionName>Sugestões para você</SectionName>
-          <TouchableOpacity
-            activeOpacity={0.8}
+          <Suggestions
             onPress={() => navigation.navigate("Suggestions")}
           >
             <Chevron />
-          </TouchableOpacity>
+          </Suggestions>
         </Section>
 
         <Card
@@ -126,7 +130,7 @@ export function Home({ navigation }: { navigation: any }) {
           pricedefault="R$ 27,90"
           tag="Programa Learn"
         />
-      </ScrollView>
-    </Container>
+      </Wrapper>
+    </Container >
   );
 }

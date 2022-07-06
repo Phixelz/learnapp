@@ -12,48 +12,20 @@ import {
 import { Tag } from "../../components/Tag";
 
 const CategoryList = [
-  {
-    id: "1",
-    category: "Design",
-  },
 
-  {
-    id: "2",
-    category: "Marketing",
-  },
-
-  {
-    id: "3",
-    category: "Social Media",
-  },
-
-  {
-    id: "4",
-    category: "Desenvolvimento Web",
-  },
-
-  {
-    id: "5",
-    category: "Softwares",
-  },
-
-  {
-    id: "6",
-    category: "Business",
-  },
-
-  {
-    id: "7",
-    category: "Fotografia",
-  },
-
-  {
-    id: "8",
-    category: "Psicologia",
-  },
+  { key: "Design", },
+  { key: "Marketing", },
+  { key: "Social Media", },
+  { key: "Desenvolvimento Web", },
+  { key: "Softwares", },
+  { key: "Business", },
+  { key: "Fotografia", },
+  { key: "Psicologia", },
+  { key: "Filosofia", },
+  { key: "História da Arte", },
 ];
 
-export function Search({ navigation }: { navigation: any }) {
+export function Search() {
   return (
     <Container>
       <Header>
@@ -61,11 +33,11 @@ export function Search({ navigation }: { navigation: any }) {
           placeholder="O que você quer aprender?"
           placeholderTextColor="#949494"
         />
-        <Icon onPress={() => navigation.navigate("Cart")} />
+        <Icon
+        />
       </Header>
 
       <Title>Mais procurados</Title>
-
       <Tags>
         <Tag tagtitle="UX Design" />
         <Tag tagtitle="UI Design" />
@@ -76,12 +48,11 @@ export function Search({ navigation }: { navigation: any }) {
       </Tags>
 
       <Title>Categorias</Title>
-
       <FlatList
         showsVerticalScrollIndicator={false}
         data={CategoryList}
-        renderItem={({ item }) => <Link>{item.category}</Link>}
-        keyExtractor={(item) => item.id}
+        renderItem={({ item }) => <Link>{item.key}</Link>}
+        keyExtractor={(item) => item.key}
       />
     </Container>
   );

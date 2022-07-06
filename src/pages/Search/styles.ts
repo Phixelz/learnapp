@@ -4,7 +4,7 @@ import { ShoppingCart } from "react-native-feather";
 export const Container = styled.View`
   flex: 1;
   padding: 24px;
-  background-color: #fbfbfb;
+  background-color: #ffffff;
 `;
 
 export const Header = styled.View`

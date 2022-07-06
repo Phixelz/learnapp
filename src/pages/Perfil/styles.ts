@@ -30,7 +30,7 @@ export const UserArea = styled.View`
   flex-direction: row;
   padding: 24px 24px;
   margin-bottom: 24px;
-  background-color: #efefefef;
+  background-color: #f1f1f1;
   border-radius: 12px;
 `;
 

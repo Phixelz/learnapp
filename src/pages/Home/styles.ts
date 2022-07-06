@@ -4,7 +4,7 @@ import styled from "styled-components/native";
 export const Container = styled.View`
   flex: 1;
   padding: 24px;
-  background-color: #fbfbfb;
+  background-color: #fafafa;
 `;
 
 export const Header = styled.View`
@@ -13,6 +13,28 @@ export const Header = styled.View`
   margin-bottom: 16px;
   justify-content: space-between;
 `;
+
+export const GrettingsView = styled.View``;
+
+export const Wrapper = styled.ScrollView.attrs({
+  showsVerticalScrollIndicator: false,
+})``;
+
+export const Perfil = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})``;
+
+export const LearnProgram = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})``;
+
+export const Populares = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})``;
+
+export const Suggestions = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})``;
 
 export const Grettings = styled.Text`
   font-size: 16px;
@@ -54,3 +76,8 @@ export const SectionName = styled.Text`
 export const Chevron = styled(ChevronRight)`
   color: #373737;
 `;
+
+export const HorizontalCards = styled.ScrollView.attrs({
+  horizontal: true,
+  showsHorizontalScrollIndicator: false,
+})``;

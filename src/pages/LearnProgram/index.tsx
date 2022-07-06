@@ -18,12 +18,12 @@ export function LearnProgram({ navigation }: { navigation: any }) {
       <ScrollView
         showsVerticalScrollIndicator={false}>
         <Header>
-          <ProgramTitle>
-            Programa Learn
-          </ProgramTitle>
-          <Icon
+        <Icon
             onPress={() => navigation.navigate("Home")}
           />
+          <ProgramTitle>
+            Programa Learn
+          </ProgramTitle> 
         </Header>
 
         <Banner
@@ -58,7 +58,7 @@ export function LearnProgram({ navigation }: { navigation: any }) {
         </Description>
 
         <Card
-          type="vertical"
+          type="default"
           cardtitle="UI Design "
           instructorname="Rayna Curtis"
           pricedefault="R$: 27,90"
