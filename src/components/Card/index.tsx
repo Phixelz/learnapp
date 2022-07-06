@@ -1,5 +1,5 @@
 import React from "react";
-import { TouchableProps } from "react-native-svg";
+import { TouchableOpacityProps } from "react-native";
 import {
   Container,
   CardTitle,
@@ -9,12 +9,12 @@ import {
   Tag,
 } from "../Card/styles";
 
-interface CardProps extends TouchableProps {
-  type: "horizontal" | "default";
-  cardtitle: string;
-  instructorname: string;
-  pricedefault: string;
-  tag: string;
+interface CardProps extends TouchableOpacityProps {
+  type: 'default' | 'horizontal';
+  cardtitle: string
+  instructorname: string
+  pricedefault: string
+  tag: string
 }
 
 export function Card({
@@ -23,28 +23,18 @@ export function Card({
   instructorname,
   pricedefault,
   tag,
-}: CardProps) {
+  ...rest
+}, {}: CardProps) {
   return (
     <Container
       activeOpacity={0.8}
-      type={type}>
-
-      <CardTitle>
-        {cardtitle}
-      </CardTitle>
-
-      <InstructorName>
-        {instructorname}
-      </InstructorName>
-
-      <PriceDefault>
-        {pricedefault}
-      </PriceDefault>
-
+      type={type}
+      {...rest}>
+      <CardTitle>{cardtitle}</CardTitle>
+      <InstructorName>{instructorname}</InstructorName>
+      <PriceDefault>{pricedefault}</PriceDefault>
       <Footer>
-        <Tag>
-          {tag}
-        </Tag>
+        <Tag>{tag}</Tag>
       </Footer>
     </Container>
   );

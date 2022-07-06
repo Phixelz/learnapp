@@ -1,28 +1,28 @@
-import React from 'react';
-import { TouchableOpacityProps } from 'react-native';
+import React from "react";
+import { TouchableOpacityProps } from "react-native";
 import {
-    Button,
+    CustomButton,
     ButtonText,
 } from '../Button/styles';
 
 interface ButtonProps extends TouchableOpacityProps {
-    color: 'primary' | 'secondary';
-    title: string;
+    type: 'payment'
+    title: string
 }
 
-export function CustomButton({
+export function Button({
+    type,
     title,
-    color,
-}: ButtonProps) {
+    ...rest
+},{}: ButtonProps) {
     return (
-        <Button
-            activeOpacity={0.9}
-            color={color}>
-            <ButtonText>
-                {title}
-            </ButtonText>
-        </Button>
-    )
+        <CustomButton
+            activeOpacity={0.8}
+            type={type}
+            {...rest}>
+            <ButtonText>{title}</ButtonText>
+        </CustomButton>
+    );
 }
 
 

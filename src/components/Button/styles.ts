@@ -1,25 +1,23 @@
 import styled, { css } from 'styled-components/native';
+import { RFValue } from 'react-native-responsive-fontsize';
 
 interface ButtonProps {
-  color: 'primary' | 'secondary';
+  type: 'payment';
 }
 
-export const Button = styled.TouchableOpacity<ButtonProps>`
+export const CustomButton = styled.TouchableOpacity<ButtonProps>`
   padding: 16px;
   align-items: center;
   border-radius: 12px;
-
-  ${(props) => props.color == 'primary' && css `
   background-color: #16BBB0;
-  `}
 
-  ${(props) => props.color == 'secondary' && css `
+  ${(props) => props.type === 'payment' && css `
   background-color: #373737;
   `}
 `;
 
 export const ButtonText = styled.Text`
+  font-size: ${RFValue(14)}px;
   color: #fff;
-  font-size: 14px;
   font-weight: 600;
 `;

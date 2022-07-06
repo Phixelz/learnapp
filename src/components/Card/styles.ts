@@ -2,7 +2,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 import styled, { css } from 'styled-components/native';
 
 interface CardProps {
-  type: 'horizontal' | 'default';
+  type: 'default' | 'horizontal';
 }
 
 export const Container = styled.TouchableOpacity<CardProps>`
