@@ -70,14 +70,14 @@ export function Home({ navigation }: { navigation: any }) {
         </LearnProgram>
 
         <Section>
-          <SectionName>Populares</SectionName>
+          <SectionName>Programa Learn</SectionName>
           <Populares>
             <Chevron />
           </Populares>
         </Section>
 
         <HorizontalCards>
-          <Card
+          <Card 
             type="horizontal"
             cardtitle="React Native"
             instructorname="Rayna Curtis"
@@ -110,6 +110,7 @@ export function Home({ navigation }: { navigation: any }) {
         </Section>
 
         <Card
+          onPress={() => navigation.navigate("Course")}
           type="default"
           cardtitle="UX Design"
           instructorname="Rayna Curtis"

@@ -3,7 +3,6 @@ import {
   View,
   ScrollView
 } from "react-native";
-import { CustomButton } from "../../components/Button";
 import {
   Container,
   CourseName,
@@ -32,6 +31,7 @@ import {
   Icons,
   Arrow,
 } from "../Course/styles";
+import { Button } from "../../components/Button";
 
 export function Course({ navigation }: { navigation: any }) {
   return (
@@ -122,8 +122,8 @@ export function Course({ navigation }: { navigation: any }) {
       <Footer>
         <Price>R$ 27,90</Price>
 
-        <CustomButton
-          color="primary"
+        <Button
+          type="primary"
           title="Adicionar ao carrinho"
         />
       </Footer>

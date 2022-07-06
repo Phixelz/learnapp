@@ -21,8 +21,8 @@ export const Wrapper = styled.View`
 `;
 
 export const Illustration = styled.Image`
-  width: ${RFValue(180)}px;
-  height: ${RFValue(180)}px;
+  width: ${RFValue(200)}px;
+  height: ${RFValue(200)}px;
   align-self: center;
   margin-bottom: 40px;
 `;

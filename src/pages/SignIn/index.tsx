@@ -15,7 +15,7 @@ import {
   Link,
   EmailForgot,
 } from '../SignIn/styles';
-import { CustomButton } from '../../components/Button';
+import { Button } from '../../components/Button';
 
 export function SignIn({ navigation }: { navigation: any }) {
   const [email, setEmail] = useState("");
@@ -65,9 +65,9 @@ export function SignIn({ navigation }: { navigation: any }) {
           placeholderTextColor="#949494"
         />
 
-        <CustomButton
+        <Button
+          type="primary"
           onPress={() => navigation.navigate("Home")}
-          color="primary"
           title="Entrar"
         />
       </Wrapper>

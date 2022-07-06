@@ -1,6 +1,4 @@
 import React from "react";
-import { CustomButton } from "../../components/Button";
-import { Card } from "../../components/Card";
 import {
   Container,
   Header,
@@ -13,6 +11,8 @@ import {
   ProgramTitle,
   ProgramSubtitle,
 } from "./styles";
+import { Button } from "../../components/Button";
+import { Card } from "../../components/Card";
 
 export function Cart({ navigation }: { navigation: any }) {
   return (
@@ -34,15 +34,14 @@ export function Cart({ navigation }: { navigation: any }) {
       </Section>
 
       <Card
-        type="default"
+        title="default"
         cardtitle="UI Design - User Interface"
         instructorname="Thilak Sundaram"
         pricedefault="R$: 27,90"
-        tag="Programa Learn"
-      />
+        tag="Programa Learn"     />
 
-      <CustomButton
-        color="secondary"
+      <Button
+        type="payment"
         title="Ir para pagamento"
       />
 
@@ -59,8 +58,8 @@ export function Cart({ navigation }: { navigation: any }) {
         </ProgramSubtitle>
       </ProgramCard>
 
-      <CustomButton
-        color="primary"
+      <Button
+        type="primary"
         title="Learn points insuficientes"
       />
     </Container>
