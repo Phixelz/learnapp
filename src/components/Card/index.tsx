@@ -3,7 +3,7 @@ import { TouchableOpacityProps } from "react-native";
 import {
   Container,
   Header,
-  CourseIcon,
+  Footer,
   Icon,
   CardTitle,
   InstructorName,
@@ -34,20 +34,20 @@ export function Card({
       type={type}
       {...rest}>
 
-      <CourseIcon
+      <Header
         type={type}>
         <Icon
           width={32}
           height={32}
         />
-      </CourseIcon>
+      </Header>
 
-      <Header>
+      <Footer>
         <CardTitle>{cardtitle}</CardTitle>
         <InstructorName>{instructorname}</InstructorName>
         <PriceDefault>{pricedefault}</PriceDefault>
         <Tag>{tag}</Tag>
-      </Header>
+      </Footer>
     </Container>
   );
 }

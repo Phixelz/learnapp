@@ -2,7 +2,7 @@ import styled from "styled-components/native";
 import { X } from "react-native-feather";
 
 export const Container = styled.View`
-  background-color: ${({ theme }) => theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary_dark};
   border-radius: 4px;
   margin-bottom: 16px;
   padding: 24px 16px 24px 24px;
@@ -11,13 +11,13 @@ export const Container = styled.View`
 export const ProgramName = styled.Text`
   font-size: 20px;
   font-weight: 700;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const SubTitle = styled.Text`
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Header = styled.View`
@@ -27,5 +27,5 @@ export const Header = styled.View`
 `;
 
 export const Icon = styled(X)`
-  color: #fff;
+  color: ${({ theme }) => theme.colors.primary};
 `;
