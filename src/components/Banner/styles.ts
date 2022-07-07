@@ -4,7 +4,7 @@ import { RFValue } from 'react-native-responsive-fontsize';
 export const Container = styled.View`
   padding: ${RFValue(12)}px;
   align-items: center;
-  background-color: #16bbb0;
+  background-color: ${({ theme }) => theme.colors.primary};
   border-radius: 8px;
 `;
 

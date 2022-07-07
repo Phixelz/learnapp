@@ -7,8 +7,8 @@ interface CardProps {
 }
 
 export const Container = styled.TouchableOpacity<CardProps>`
+  background-color: ${({ theme }) => theme.colors.background};
   flex-direction: row;
-  background-color: #fff;
   border-radius: 8px;
   border-width: 1px;
   border-color: #f1f1f1;
@@ -32,9 +32,9 @@ padding: 16px 16px 16px 0;
 
 export const CourseIcon = styled.View<CardProps>`
   padding: 32px;
-  background-color: #f0fffe;
   border-radius: 8px;
   justify-content: center;
+  background-color: ${({ theme }) => theme.colors.primary_light};
 
   ${(props) => props.type === 'horizontal' && css `
   align-items: center;
@@ -42,27 +42,27 @@ export const CourseIcon = styled.View<CardProps>`
 `;
 
 export const Icon = styled(Book)`
-  color: #16bbb0;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const CardTitle = styled.Text`
  font-size: 18px;
  font-weight: 700;
- color: #5f5f5f;
+ color: ${({ theme }) => theme.colors.title_light};
 `;
 
 export const InstructorName = styled.Text`
   margin: 4px;
   font-size: 16px;
   font-weight: 400;
-  color: #999999;
+  color: ${({ theme }) => theme.colors.description};
 `;
 
 export const PriceDefault = styled.Text`
 margin: 4px;
 font-size: 16px;
 font-weight: 700;
-color: #373737;
+color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Footer = styled.View`
@@ -71,11 +71,11 @@ margin: 4px 0;
 
 export const Tag = styled.Text`
 width: ${RFValue(116)}px;
-background-color: #f0fffe;
+background-color: ${({ theme }) => theme.colors.primary_light};
 border-radius: 4px;
 font-size: 14px;
 font-weight: 600;
-color: #16bbb0;
+color: ${({ theme }) => theme.colors.primary};
 margin-top: 4px;
 padding: 4px 8px 4px;
 `;

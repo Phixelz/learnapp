@@ -9,15 +9,15 @@ export const CustomButton = styled.TouchableOpacity<ButtonProps>`
   padding: 16px;
   align-items: center;
   border-radius: 12px;
-  background-color: #16BBB0;
+  background-color: ${({ theme }) => theme.colors.primary};
 
   ${(props) => props.type === 'payment' && css `
-  background-color: #373737;
+  background-color: ${({ theme }) => theme.colors.secondary_dark};
   `}
 `;
 
 export const ButtonText = styled.Text`
   font-size: ${RFValue(14)}px;
-  color: #fff;
   font-weight: 600;
+  color: #fff;
 `;
