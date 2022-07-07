@@ -8,7 +8,6 @@ interface ButtonProps extends TouchableOpacityProps {
 }
 
 export function Button({ type, title, ...rest }, {
-
 }: ButtonProps) {
     return (
         <CustomButton

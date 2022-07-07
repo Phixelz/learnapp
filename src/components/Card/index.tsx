@@ -2,10 +2,12 @@ import React from "react";
 import { TouchableOpacityProps } from "react-native";
 import {
   Container,
+  Header,
+  CourseIcon,
+  Icon,
   CardTitle,
   InstructorName,
   PriceDefault,
-  Footer,
   Tag,
 } from "../Card/styles";
 
@@ -24,18 +26,28 @@ export function Card({
   pricedefault,
   tag,
   ...rest
-}, {}: CardProps) {
+}, {
+}: CardProps) {
   return (
     <Container
       activeOpacity={0.8}
       type={type}
       {...rest}>
-      <CardTitle>{cardtitle}</CardTitle>
-      <InstructorName>{instructorname}</InstructorName>
-      <PriceDefault>{pricedefault}</PriceDefault>
-      <Footer>
+
+      <CourseIcon
+        type={type}>
+        <Icon
+          width={32}
+          height={32}
+        />
+      </CourseIcon>
+
+      <Header>
+        <CardTitle>{cardtitle}</CardTitle>
+        <InstructorName>{instructorname}</InstructorName>
+        <PriceDefault>{pricedefault}</PriceDefault>
         <Tag>{tag}</Tag>
-      </Footer>
+      </Header>
     </Container>
   );
 }

@@ -1,6 +1,8 @@
 import React from "react";
 import {
   Container,
+  Header,
+  Icon,
   ProgramName,
   SubTitle,
 } from "../LearnCard/styles";
@@ -10,18 +12,20 @@ interface Props {
   subtitle: string,
 }
 
-export function LearnCard({
-  programname,
-  subtitle }: Props) {
+export function LearnCard({ programname, subtitle }: Props) {
   return (
     <Container>
-      <ProgramName>
-        {programname}
-      </ProgramName>
+      <Header>
+        <ProgramName>
+          {programname}
+        </ProgramName>
+        <Icon />
+      </Header>
 
       <SubTitle>
         {subtitle}
       </SubTitle>
+
     </Container>
   );
 }
