@@ -7,7 +7,6 @@ import {
 
 import {
   Container,
-  Header,
   Title,
   Illustration,
   Wrapper,
@@ -33,11 +32,9 @@ export function SignIn({ navigation }: { navigation: any }) {
 
   return (
     <Container>
-      <Header>
-        <Title>
-          Learn.
-        </Title>
-      </Header>
+      <Title>
+        Learn.
+      </Title>
 
       <Wrapper>
         <Illustration

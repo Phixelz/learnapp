@@ -51,7 +51,7 @@ export const Instructor = styled.View`
 export const InstructorName = styled.Text`
   font-size: 16px;
   font-weight: 400;
-  color: #999999;
+  color: ${({ theme }) => theme.colors.description};
 `;
 
 export const SubTitle = styled.Text`
@@ -87,13 +87,13 @@ export const RatingsNumber = styled.Text`
 export const Divider = styled.View`
   margin: 24px 0 24px 0;
   border-bottom-width: 1px;
-  border-color: #dbdbdb;
+  border-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const CourseTitle = styled.Text`
   font-size: 18px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
   margin-bottom: 4px;
 `;
 
@@ -109,7 +109,7 @@ export const LearnTo = styled.Text`
 `;
 
 export const Icon = styled(Check)`
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary_dark};
   margin-right: 4px;
 `;
 
@@ -134,7 +134,7 @@ export const Share = styled(Share2)`
 export const DividerFooter = styled.View`
   margin: 0 0 24px 0;
   border-bottom-width: 1px;
-  border-color: #dbdbdb;
+  border-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const Price = styled.Text`
@@ -149,5 +149,5 @@ export const Footer = styled.View`
   align-items: center;
   padding: 16px 24px 16px;
   border-top-width: 1px;
-  border-color: #f2f2f2;
+  border-color: ${({ theme }) => theme.colors.secondary};
 `;

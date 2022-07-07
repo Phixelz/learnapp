@@ -12,11 +12,11 @@ margin-bottom: 24px;
 `;
 
 export const Icon = styled(ArrowLeft)`
-  color: #404040;
+  color: #373737;
 `;
 
 export const Chevron = styled(ChevronRight)`
-  color: #bebebe;
+  color: #dddddd;
 `;
 
 export const UserArea = styled.View`
@@ -33,7 +33,7 @@ export const User = styled.View`
 
 export const Divider = styled.View`
   border-bottom-width: 1px;
-  border-color: #ebebeb;
+  border-color: ${({ theme }) => theme.colors.secondary};
   margin-bottom: 24px;
 `;
 

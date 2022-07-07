@@ -4,7 +4,7 @@ import { ShoppingCart } from "react-native-feather";
 export const Container = styled.View`
   flex: 1;
   padding: 24px;
-  color: ${({ theme }) => theme.colors.background};
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const Header = styled.View`
@@ -45,4 +45,3 @@ export const Link = styled.Text`
   color: ${({ theme }) => theme.colors.title};
   margin: 16px 0;
 `;
-

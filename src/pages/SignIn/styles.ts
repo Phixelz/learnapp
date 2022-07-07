@@ -7,13 +7,10 @@ export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
-export const Header = styled.View`
-`;
-
 export const Title = styled.Text`
   font-size: ${RFValue(24)}px;
   font-weight: 900;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary_dark};
 `;
 
 export const Wrapper = styled.View`
@@ -44,5 +41,5 @@ export const EmailForgot = styled.Text`
   font-size: 15px;
   font-weight: 600;
   margin-bottom: 8px;
-  color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.primary_dark};
 `;
