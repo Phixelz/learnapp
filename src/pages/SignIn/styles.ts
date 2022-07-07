@@ -13,7 +13,7 @@ export const Header = styled.View`
 export const Title = styled.Text`
   font-size: ${RFValue(24)}px;
   font-weight: 900;
-  color: #16bbb0;
+  color: ${({ theme }) => theme.colors.primary};
 `;
 
 export const Wrapper = styled.View`
@@ -28,10 +28,10 @@ export const Illustration = styled.Image`
 `;
 
 export const TextInput = styled.TextInput`
-  background-color: #f2f2f2;
   padding: 12px 12px;
   border-radius: 12px;
   margin-bottom: 16px;
+  background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const Link = styled.TouchableOpacity.attrs({
@@ -43,6 +43,6 @@ export const EmailForgot = styled.Text`
   align-self: flex-end;
   font-size: 15px;
   font-weight: 600;
-  color: #16bbb0;
   margin-bottom: 8px;
+  color: ${({ theme }) => theme.colors.primary};
 `;

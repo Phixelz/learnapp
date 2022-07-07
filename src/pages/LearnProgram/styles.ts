@@ -16,7 +16,7 @@ export const Header = styled.View`
 export const ProgramTitle = styled.Text`
   font-size: 20px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
   margin-left: 12px;
 `;
 
@@ -27,13 +27,13 @@ export const Icon = styled(ArrowLeft)`
 export const Title = styled.Text`
   font-size: 18px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
   margin-top: 24px;
   margin-bottom: 8px;
 `;
 
 export const Description = styled.Text`
   font-size: 16px;
-  color: #999999;
+  color: ${({ theme }) => theme.colors.description};
   margin: 12px 0;
 `;

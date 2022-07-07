@@ -15,7 +15,7 @@ export const Icon = styled(ArrowLeft)`
 `;
 
 export const Header = styled.View`
-  margin-bottom: 32px;
+  margin-bottom: 24px;
 `;
 
 export const Section = styled.View`
@@ -28,13 +28,7 @@ export const Section = styled.View`
 export const CartItem = styled.Text`
   font-size: 18px;
   font-weight: 600;
-  color: #373737;
-`;
-
-export const ButtonRemove = styled.Text`
-  font-size: 15px;
-  font-weight: 600;
-  color: #cc4c4d;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Divider = styled.View`
@@ -44,23 +38,22 @@ export const Divider = styled.View`
 `;
 
 export const ProgramCard = styled.View`
-  padding: 16px 16px;
+  padding: 24px 24px;
   border-width: 1px;
   border-color: #dddddd;
-  background-color: #ffffff;
   border-radius: 8px;
   margin-bottom: 12px;
-`;
-
-export const ProgramSubtitle = styled.Text`
-  font-size: 16px;
-  font-weight: 400;
-  color: #909090;
-  margin: 4px;
 `;
 
 export const ProgramTitle = styled.Text`
   font-size: 18px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
+`;
+
+export const ProgramSubtitle = styled.Text`
+  font-size: 16px;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.subtitle};
+  margin: 4px;
 `;

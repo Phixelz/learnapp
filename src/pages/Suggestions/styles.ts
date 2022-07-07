@@ -23,7 +23,7 @@ export const SuggestionsTitle = styled.Text`
   align-self: center;
   font-size: 20px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const BackHome = styled(ArrowLeft)`
@@ -42,7 +42,7 @@ export const Wrapper = styled.ScrollView.attrs({
 
 export const TextInput = styled.TextInput`
   flex: 1;
-  background-color: #f2f2f2;
+  background-color: ${({ theme }) => theme.colors.secondary};
   padding: 12px 12px;
   border-radius: 12px;
   margin-bottom: 16px;

@@ -4,7 +4,6 @@ import {
   Header,
   Section,
   CartItem,
-  ButtonRemove,
   Icon,
   Divider,
   ProgramCard,
@@ -27,18 +26,14 @@ export function Cart({ navigation }: { navigation: any }) {
         <CartItem>
           1 Item
         </CartItem>
-
-        <ButtonRemove>
-          Remover
-        </ButtonRemove>
       </Section>
 
       <Card
-        title="default"
+        type="default"
         cardtitle="UI Design - User Interface"
         instructorname="Thilak Sundaram"
         pricedefault="R$: 27,90"
-        tag="Programa Learn"     />
+        tag="Programa Learn"        />
 
       <Button
         type="payment"

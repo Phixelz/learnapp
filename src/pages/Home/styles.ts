@@ -39,7 +39,7 @@ export const Suggestions = styled.TouchableOpacity.attrs({
 export const Grettings = styled.Text`
   font-size: 16px;
   font-weight: 400;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Avatar = styled.Image`
@@ -51,11 +51,11 @@ export const Avatar = styled.Image`
 export const Title = styled.Text`
   font-size: 22px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const TextInput = styled.TextInput`
-  background-color: #f2f2f2;
+  background-color: ${({ theme }) => theme.colors.secondary};
   padding: 12px 12px;
   border-radius: 12px;
   margin-bottom: 16px;
@@ -70,7 +70,7 @@ export const Section = styled.View`
 export const SectionName = styled.Text`
   font-size: 16px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Chevron = styled(ChevronRight)`

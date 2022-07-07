@@ -31,14 +31,14 @@ export const Wrapper = styled.View`
 export const Title = styled.Text`
   font-size: 16px;
   font-weight: 700;
-  color: #373737;
-  margin-bottom: 8px;
+  color: ${({ theme }) => theme.colors.title};
+  margin-bottom: 4px;
 `;
 
 export const Description = styled.Text`
   font-size: 15px;
   font-weight: 400;
-  color: #999999;
+  color: ${({ theme }) => theme.colors.description};
   margin-bottom: 24px;
 `;
 
@@ -57,7 +57,7 @@ export const InstructorName = styled.Text`
 export const SubTitle = styled.Text`
   font-size: 15px;
   font-weight: 400;
-  color: #999999;
+  color: ${({ theme }) => theme.colors.subtitle};
 `;
 
 export const Avatar = styled.Image`
@@ -81,7 +81,7 @@ export const RatingsView = styled.View`
 export const RatingsNumber = styled.Text`
   font-size: 16px;
   font-weight: 700;
-  color: #fbbc05;
+  color: ${({ theme }) => theme.colors.attention};
 `;
 
 export const Divider = styled.View`
@@ -105,16 +105,16 @@ export const Checks = styled.View`
 export const LearnTo = styled.Text`
   font-size: 15px;
   margin: 0 0 32px 0;
-  color: #999999;
+  color: ${({ theme }) => theme.colors.description};
 `;
 
 export const Icon = styled(Check)`
-  color: #16bbb0;
+  color: ${({ theme }) => theme.colors.primary};
   margin-right: 4px;
 `;
 
 export const Ratings = styled(Star)`
-  color: #fbbc05;
+  color: ${({ theme }) => theme.colors.attention};
   margin-right: 4px;
 `;
 
@@ -140,7 +140,7 @@ export const DividerFooter = styled.View`
 export const Price = styled.Text`
   font-size: 20px;
   font-weight: 700;
-  color: #373737;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Footer = styled.View`

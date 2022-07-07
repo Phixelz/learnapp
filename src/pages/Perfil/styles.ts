@@ -1,5 +1,5 @@
 import styled from "styled-components/native";
-import { ArrowLeft, ChevronRight, HelpCircle } from "react-native-feather";
+import { ArrowLeft, ChevronRight } from "react-native-feather";
 
 export const Container = styled.View`
   flex: 1;
@@ -24,7 +24,7 @@ export const UserArea = styled.View`
   flex-direction: row;
   padding: 24px 24px;
   margin-bottom: 32px;
-  background-color: #f1f1f1;
+  background-color: ${({ theme }) => theme.colors.secondary};
   border-radius: 12px;
 `;
 
@@ -51,13 +51,13 @@ export const Content = styled.View``;
 export const Title = styled.Text`
   font-size: 16px;
   font-weight: 700;
-  color: #4e4e4e;
+  color: ${({ theme }) => theme.colors.title};
 `;
 
 export const Subtitle = styled.Text`
   font-size: 16px;
   font-weight: 400;
-  color: #a5a5a5;
+  color: ${({ theme }) => theme.colors.subtitle};
 `;
 
 export const Avatar = styled.Image`
