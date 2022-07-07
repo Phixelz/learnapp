@@ -13,7 +13,6 @@ import {
   Content,
   Chevron,
 } from "../Perfil/styles";
-import { LearnCard } from "../../components/LearnCard";
 export function Perfil({ navigation }: { navigation: any }) {
   return (
     <Container>
@@ -63,10 +62,25 @@ export function Perfil({ navigation }: { navigation: any }) {
         <Chevron />
       </Menu>
 
-      <LearnCard
-        programname="Learn Level"
-        subtitle="• Você está no nível 1"
-      />
+      <Divider />
+
+      <Menu>
+        <Content>
+          <Title>Programa Learn</Title>
+          <Subtitle>Gerencie seus Learn Points</Subtitle>
+        </Content>
+        <Chevron />
+      </Menu>
+
+      <Divider />
+
+      <Menu>
+        <Content>
+          <Title>Ajuda</Title>
+          <Subtitle>Tire suas dúvidas</Subtitle>
+        </Content>
+        <Chevron />
+      </Menu>
     </Container>
   );
 }

@@ -1,20 +1,14 @@
 import styled from "styled-components/native";
-import { ArrowLeft, ChevronRight } from "react-native-feather";
+import { ArrowLeft, ChevronRight, HelpCircle } from "react-native-feather";
 
 export const Container = styled.View`
   flex: 1;
   padding: 24px;
-  background-color: #fbfbfb;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const Header = styled.View`
 margin-bottom: 24px;
-`;
-
-export const PerfilTitle = styled.Text`
-  font-size: 22px;
-  font-weight: 700;
-  color: #373737;
 `;
 
 export const Icon = styled(ArrowLeft)`
@@ -29,7 +23,7 @@ export const UserArea = styled.View`
   align-items: center;
   flex-direction: row;
   padding: 24px 24px;
-  margin-bottom: 24px;
+  margin-bottom: 32px;
   background-color: #f1f1f1;
   border-radius: 12px;
 `;

@@ -70,7 +70,7 @@ export function Home({ navigation }: { navigation: any }) {
         </LearnProgram>
 
         <Section>
-          <SectionName>Programa Learn</SectionName>
+          <SectionName>Populares</SectionName>
           <Populares>
             <Chevron />
           </Populares>

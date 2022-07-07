@@ -16,16 +16,15 @@ export const Header = styled.View`
 
 export const TextInput = styled.TextInput`
   flex: 1;
-  background-color: #f2f2f2;
   padding: 12px;
   border-radius: 12px;
   margin: 0 12px 0 0;
+  background-color: ${({ theme }) => theme.colors.background};
 `;
 
 export const Icon = styled(ShoppingCart)`
   color: #404040;
 `;
-
 
 export const Title = styled.Text`
   font-size: 18px;
