@@ -33,15 +33,15 @@ export function Cart({ navigation }: { navigation: any }) {
         cardtitle="UI Design - User Interface"
         instructorname="Thilak Sundaram"
         pricedefault="R$: 27,90"
-        tag="Programa Learn"        />
+        tag="Programa Learn"
+      />
 
       <Button
         type="payment"
         title="Ir para pagamento"
       />
 
-      <Divider
-      />
+      <Divider />
 
       <ProgramCard>
         <ProgramTitle>
@@ -54,7 +54,8 @@ export function Cart({ navigation }: { navigation: any }) {
       </ProgramCard>
 
       <Button
-        type="primary"
+        disabled={true}
+        type="default"
         title="Learn points insuficientes"
       />
     </Container>

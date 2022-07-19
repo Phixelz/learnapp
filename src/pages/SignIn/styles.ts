@@ -26,8 +26,8 @@ export const Illustration = styled.Image`
 
 export const TextInput = styled.TextInput`
   padding: 12px 12px;
-  border-radius: 12px;
   margin-bottom: 16px;
+  border-radius: 8px;
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
 

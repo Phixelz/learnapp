@@ -44,7 +44,7 @@ export const TextInput = styled.TextInput`
   flex: 1;
   background-color: ${({ theme }) => theme.colors.secondary};
   padding: 12px 12px;
-  border-radius: 12px;
+  border-radius: 8px;
   margin-bottom: 16px;
 `;
 

@@ -17,14 +17,15 @@ import { Tag } from "../../components/Tag";
 export function Suggestions({ navigation }: { navigation: any }) {
   return (
     <Container>
+      
       <Header>
         <IconLeft>
-          <BackHome onPress={() => navigation.navigate("Home")}
-          />
-          <SuggestionsTitle>Sugestões para você</SuggestionsTitle>
+          <BackHome onPress={() => navigation.navigate("Home")} />
+          <SuggestionsTitle>
+            Sugestões para você
+          </SuggestionsTitle>
         </IconLeft>
-        <Icon
-        />
+        <Icon/>
       </Header>
 
       <Wrapper>

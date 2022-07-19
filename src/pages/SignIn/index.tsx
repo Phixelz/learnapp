@@ -4,7 +4,6 @@ import auth from "@react-native-firebase/auth";
 import {
   Alert,
 } from "react-native";
-
 import {
   Container,
   Title,
@@ -63,7 +62,7 @@ export function SignIn({ navigation }: { navigation: any }) {
         />
 
         <Button
-          type="primary"
+          type="default"
           onPress={() => navigation.navigate("Home")}
           title="Entrar"
         />

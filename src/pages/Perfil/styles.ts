@@ -25,7 +25,7 @@ export const UserArea = styled.View`
   padding: 24px 24px;
   margin-bottom: 32px;
   background-color: ${({ theme }) => theme.colors.secondary};
-  border-radius: 12px;
+  border-radius: 8px;
 `;
 
 export const User = styled.View`
@@ -63,6 +63,7 @@ export const Subtitle = styled.Text`
 export const Avatar = styled.Image`
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 24px;
+  opacity: 0.9;
   margin: 0 12px 0 0;
 `;

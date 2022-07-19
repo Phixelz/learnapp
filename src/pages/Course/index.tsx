@@ -53,56 +53,84 @@ export function Course({ navigation }: { navigation: any }) {
             }}
           />
           <CourseName>
-            <CourseTitle>UX Design - User Experience</CourseTitle>
+            <CourseTitle>
+              UX Design - User Experience
+            </CourseTitle>
+
             <RatingsView>
               <Ratings fill="#FBBC05" width={16} />
               <RatingsNumber>4.5</RatingsNumber>
             </RatingsView>
           </CourseName>
-          <InstructorName>Thilak Sundaram</InstructorName>
+
+          <InstructorName>
+            Thilak Sundaram
+          </InstructorName>
 
           <Divider />
 
-          <Title>Requisitos</Title>
-          <Description>• Computador com conexão à Internet</Description>
+          <Title>
+            Requisitos
+          </Title>
+          <Description>
+            • Computador com conexão à Internet
+          </Description>
 
-          <Title>Descrição</Title>
+          <Title>
+            Descrição
+          </Title>
           <Description>
             A ideia de UX, ou experiência do usuário, não é nova, mas continua a
             ser um ponto sensível para designers e usuários finais.
           </Description>
 
-          <Title>O que você vai aprender</Title>
-          <Description>12h e 45m de duração total</Description>
+          <Title>
+            O que você vai aprender
+          </Title>
+          <Description>
+            12h e 45m de duração total
+          </Description>
 
           <Checks>
             <Icon />
-            <LearnTo>Você aprenderá sobre ferramentas relevantes</LearnTo>
+            <LearnTo>
+              Você aprenderá sobre ferramentas relevantes
+            </LearnTo>
           </Checks>
 
           <Checks>
             <Icon />
-            <LearnTo>A relatar os resultados dos testes do usuário</LearnTo>
+            <LearnTo>
+              A relatar os resultados dos testes do usuário
+            </LearnTo>
           </Checks>
 
           <Checks>
             <Icon />
-            <LearnTo>Você aprenderá a diferença entre UI e UX</LearnTo>
+            <LearnTo>
+              Você aprenderá a diferença entre UI e UX
+            </LearnTo>
           </Checks>
 
           <Checks>
             <Icon />
-            <LearnTo>Você aprenderá a criar wireframes</LearnTo>
+            <LearnTo>
+              Você aprenderá a criar wireframes
+            </LearnTo>
           </Checks>
 
-          <Title>Programa Learn</Title>
+          <Title>
+            Programa Learn
+          </Title>
           <Description>
             Este curso está cadastrado no programa Learn
           </Description>
 
           <DividerFooter />
 
-          <Title>Educador</Title>
+          <Title>
+            Educador
+          </Title>
 
           <Instructor>
             <Avatar
@@ -111,11 +139,13 @@ export function Course({ navigation }: { navigation: any }) {
                 uri: "https://img-b.udemycdn.com/user/200_H/186416782_a8ae_2.jpg",
               }}
             />
+
             <View>
               <Title>Thilak Sundaram</Title>
               <SubTitle>UI/UX Designer</SubTitle>
             </View>
           </Instructor>
+
         </Wrapper>
       </ScrollView>
 
@@ -123,7 +153,7 @@ export function Course({ navigation }: { navigation: any }) {
         <Price>R$ 27,90</Price>
 
         <Button
-          type="primary"
+          type="default"
           title="Adicionar ao carrinho"
         />
       </Footer>

@@ -45,7 +45,8 @@ export const Grettings = styled.Text`
 export const Avatar = styled.Image`
   width: 40px;
   height: 40px;
-  border-radius: 50px;
+  border-radius: 24px;
+  opacity: 0.9;
 `;
 
 export const Title = styled.Text`
@@ -57,7 +58,7 @@ export const Title = styled.Text`
 export const TextInput = styled.TextInput`
   background-color: ${({ theme }) => theme.colors.secondary};
   padding: 12px 12px;
-  border-radius: 12px;
+  border-radius: 8px;
   margin-bottom: 16px;
 `;
 
