@@ -1,5 +1,4 @@
 import React from "react";
-import { FlatList } from "react-native";
 import {
   Container,
   Icon,
@@ -7,22 +6,53 @@ import {
   TextInput,
   Tags,
   Title,
-  Link,
+  CategoryList,
+  Section,
 } from "../Search/styles";
 import { Tag } from "../../components/Tag";
+import { Button } from "../../components/Button";
 
-const CategoryList = [
-
-  { key: "Design", },
-  { key: "Marketing", },
-  { key: "Social Media", },
-  { key: "Desenvolvimento Web", },
-  { key: "Softwares", },
-  { key: "Business", },
-  { key: "Fotografia", },
-  { key: "Psicologia", },
-  { key: "Filosofia", },
-  { key: "História da Arte", },
+const List = [
+  {
+    id: "1",
+    title: "Design",
+  },
+  {
+    id: "2",
+    title: "Marketing",
+  },
+  {
+    id: "3",
+    title: "Social Media",
+  },
+  {
+    id: "4",
+    title: "Desenvolvimento Web",
+  },
+  {
+    id: "5",
+    title: "Softwares",
+  },
+  {
+    id: "6",
+    title: "Business",
+  },
+  {
+    id: "7",
+    title: "Fotografia",
+  },
+  {
+    id: "8",
+    title: "Psicologia",
+  },
+  {
+    id: "9",
+    title: "Filosofia",
+  },
+  {
+    id: "10",
+    title: "História da Arte",
+  },
 ];
 
 export function Search() {
@@ -33,8 +63,7 @@ export function Search() {
           placeholder="O que você quer aprender?"
           placeholderTextColor="#949494"
         />
-        <Icon
-        />
+        <Icon />
       </Header>
 
       <Title>Mais procurados</Title>
@@ -47,12 +76,24 @@ export function Search() {
         <Tag tagtitle="NodeJS" />
       </Tags>
 
-      <Title>Categorias</Title>
-      <FlatList
-        showsVerticalScrollIndicator={false}
-        data={CategoryList}
-        renderItem={({ item }) => <Link>{item.key}</Link>}
-        keyExtractor={(item) => item.key}
+      <CategoryList
+        sections={[
+          {
+            sectiontitle: "Categorias",
+            data: List
+          }
+        ]}
+        renderItem={({ item }) => (
+          <Button
+            type="link"
+            title={item.title}
+          />
+        )}
+        renderSectionHeader={({ section }) => (
+          <Section>
+            {section.sectiontitle}
+          </Section>
+        )}
       />
     </Container>
   );

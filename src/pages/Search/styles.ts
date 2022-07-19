@@ -11,7 +11,8 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 16px;
+  padding: 16px 0;
+
 `;
 
 export const Icon = styled(ShoppingCart)`
@@ -21,13 +22,13 @@ export const Icon = styled(ShoppingCart)`
 export const TextInput = styled.TextInput`
   flex: 1;
   padding: 12px;
-  border-radius: 12px;
+  border-radius: 8px;
   margin: 0 12px 0 0;
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
 export const Title = styled.Text`
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.title};
   margin-bottom: 16px;
@@ -39,9 +40,14 @@ export const Tags = styled.View`
   margin-bottom: 16px;
 `;
 
-export const Link = styled.Text`
-  font-size: 16px;
-  font-weight: 600;
+export const Section = styled.Text`
+  font-size: 20px;
+  font-weight: 700;
   color: ${({ theme }) => theme.colors.title};
-  margin: 16px 0;
+
+`;
+
+export const CategoryList = styled.SectionList.attrs({
+  showsVerticalScrollIndicator: false,
+})`
 `;
