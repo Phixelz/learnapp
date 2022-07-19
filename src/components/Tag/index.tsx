@@ -12,9 +12,7 @@ export function Tag({
     tagtitle, }: Props) {
     return (
         <Container>
-            <TagTitle>
-                {tagtitle}
-            </TagTitle>
-        </Container >
+            <TagTitle>{tagtitle}</TagTitle>
+        </Container>
     );
 }

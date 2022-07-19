@@ -16,15 +16,11 @@ export function LearnCard({ programname, subtitle }: Props) {
   return (
     <Container>
       <Header>
-        <ProgramName>
-          {programname}
-        </ProgramName>
+        <ProgramName>{programname}</ProgramName>
         <Icon />
       </Header>
 
-      <SubTitle>
-        {subtitle}
-      </SubTitle>
+      <SubTitle>{subtitle}</SubTitle>
 
     </Container>
   );

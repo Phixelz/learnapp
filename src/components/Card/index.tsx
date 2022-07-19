@@ -29,17 +29,12 @@ export function Card({
 }, {
 }: CardProps) {
   return (
-    <Container
-      activeOpacity={0.8}
-      type={type}
+    <Container type={type}
       {...rest}>
 
       <Header
         type={type}>
-        <Icon
-          width={32}
-          height={32}
-        />
+        <Icon/>
       </Header>
 
       <Footer>
@@ -48,6 +43,7 @@ export function Card({
         <PriceDefault>{pricedefault}</PriceDefault>
         <Tag>{tag}</Tag>
       </Footer>
+      
     </Container>
   );
 }

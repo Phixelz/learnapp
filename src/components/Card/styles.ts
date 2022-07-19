@@ -1,12 +1,15 @@
-import { RFValue } from 'react-native-responsive-fontsize';
 import styled, { css } from 'styled-components/native';
 import { Book } from "react-native-feather";
+import { RFValue } from 'react-native-responsive-fontsize';
 
 interface CardProps {
   type: 'default' | 'horizontal';
 }
 
-export const Container = styled.TouchableOpacity<CardProps>`
+export const Container = styled.TouchableOpacity.attrs({
+  activeOpacity: 0.8,
+})<CardProps>`
+
   background-color: ${({ theme }) => theme.colors.background};
   flex-direction: row;
   border-radius: 8px;

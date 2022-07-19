@@ -3,7 +3,7 @@ import { X } from "react-native-feather";
 
 export const Container = styled.View`
   background-color: ${({ theme }) => theme.colors.primary_dark};
-  border-radius: 4px;
+  border-radius: 8px;
   margin-bottom: 16px;
   padding: 24px 16px 24px 24px;
 `;
