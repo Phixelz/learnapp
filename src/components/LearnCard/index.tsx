@@ -8,20 +8,20 @@ import {
 } from "../LearnCard/styles";
 
 interface Props {
+  type: "default" | "static";
   programname: string,
   subtitle: string,
 }
 
-export function LearnCard({ programname, subtitle }: Props) {
+export function LearnCard({ type, programname, subtitle }: Props) {
   return (
-    <Container>
+    <Container type={type}>
       <Header>
-        <ProgramName>{programname}</ProgramName>
-        <Icon />
+        <ProgramName type={type}>{programname}</ProgramName>
+        <Icon type={type} />
       </Header>
 
-      <SubTitle>{subtitle}</SubTitle>
-
+      <SubTitle type={type}>{subtitle}</SubTitle>
     </Container>
   );
 }
