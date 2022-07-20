@@ -1,9 +1,6 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import auth from "@react-native-firebase/auth";
-import {
-  Alert,
-} from "react-native";
+import { Alert } from "react-native";
 import {
   Container,
   Header,
@@ -11,8 +8,6 @@ import {
   Illustration,
   Form,
   TextInput,
-  Link,
-  EmailForgot,
 } from '../SignIn/styles';
 import { Button } from '../../components/Button';
 
@@ -43,26 +38,25 @@ export function SignIn({ navigation }: { navigation: any }) {
         />
       </Header>
 
-    <Form>
-      <TextInput
-        onChangeText={setEmail}
-        placeholder="Digite seu e-mail"
-        placeholderTextColor="#949494"
-      />
+      <Form>
+        <TextInput
+          onChangeText={setEmail}
+          placeholder="Digite seu e-mail"
+          placeholderTextColor="#949494"
+        />
 
-      <Link
-        activeOpacity={0.8}
-        onPress={handleForgotPassword}>
-        <EmailForgot>
-          Esqueceu sua senha?
-        </EmailForgot>
-      </Link>
+        <Button
+          activeOpacity={0.8}
+          type="link"
+          onPress={handleForgotPassword}
+          title="Esqueceu sua senha?"
+        />
 
-      <TextInput
-        secureTextEntry
-        placeholder="Digite sua senha"
-        placeholderTextColor="#949494"
-      />
+        <TextInput
+          secureTextEntry
+          placeholder="Digite sua senha"
+          placeholderTextColor="#949494"
+        />
       </Form>
 
       <Button
@@ -70,7 +64,6 @@ export function SignIn({ navigation }: { navigation: any }) {
         onPress={() => navigation.navigate("Home")}
         title="Entrar"
       />
-
     </Container>
   );
 }

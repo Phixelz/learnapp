@@ -35,11 +35,6 @@ export const TextInput = styled.TextInput`
   background-color: ${({ theme }) => theme.colors.secondary};
 `;
 
-export const Link = styled.TouchableOpacity.attrs({
-  activeOpacity: 0.8,
-})`
-`;
-
 export const EmailForgot = styled.Text`
   align-self: flex-end;
   font-size: 15px;
