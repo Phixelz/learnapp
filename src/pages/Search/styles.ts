@@ -11,7 +11,7 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 24px 0;
+  margin-bottom: 16px;
 `;
 
 export const Icon = styled(ShoppingCart)`

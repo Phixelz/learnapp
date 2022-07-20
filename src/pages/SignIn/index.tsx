@@ -46,7 +46,6 @@ export function SignIn({ navigation }: { navigation: any }) {
         />
 
         <Button
-          activeOpacity={0.8}
           type="link"
           onPress={handleForgotPassword}
           title="Esqueceu sua senha?"
@@ -60,7 +59,7 @@ export function SignIn({ navigation }: { navigation: any }) {
       </Form>
 
       <Button
-        type="default"
+        type="primary"
         onPress={() => navigation.navigate("Home")}
         title="Entrar"
       />

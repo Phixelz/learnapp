@@ -55,7 +55,7 @@ export function Cart({ navigation }: { navigation: any }) {
 
       <Button
         disabled={true}
-        type="default"
+        type="primary"
         title="Learn points insuficientes"
       />
     </Container>

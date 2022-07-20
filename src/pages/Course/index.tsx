@@ -153,7 +153,7 @@ export function Course({ navigation }: { navigation: any }) {
         <Price>R$ 27,90</Price>
 
         <Button
-          type="default"
+          type="primary"
           title="Adicionar ao carrinho"
         />
       </Footer>

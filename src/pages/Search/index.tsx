@@ -64,7 +64,7 @@ export function Search() {
         ]}
         renderItem={({ item }) => (
           <Button
-            type="link"
+            type="secondary"
             title={item.title}
           />
         )}
