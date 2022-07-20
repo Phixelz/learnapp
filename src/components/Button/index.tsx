@@ -1,12 +1,12 @@
 import React from "react";
 import { TouchableOpacityProps } from "react-native";
-import { 
-    CustomButton, 
+import {
+    CustomButton,
     ButtonText,
 } from "../Button/styles";
 
 interface ButtonProps extends TouchableOpacityProps {
-    type: "default" | "payment" | "link";
+    type: "primary" | "secondary" | "payment" | "link";
     title: string;
 }
 
