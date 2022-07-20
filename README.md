@@ -10,6 +10,7 @@ Learn App
 - TypeScript
 - FireBase
 - Firebase Auth
+- Styled Components
 
 ## Features
 
