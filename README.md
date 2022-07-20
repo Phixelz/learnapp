@@ -2,7 +2,7 @@
 
 # Learnapp
 
-Learn App
+Learn.
 
 ## Stacks
 
@@ -10,12 +10,15 @@ Learn App
 - TypeScript
 - FireBase
 - Firebase Auth
-- Styled Components
 
 ## Features
 
 - User Authentication
 - Password recovery with e-mail
+
+## Libs
+
+- Styled Components
 
 ## Screens
 
