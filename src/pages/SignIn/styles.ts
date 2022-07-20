@@ -1,27 +1,31 @@
 import styled from "styled-components/native";
 import { RFPercentage, RFValue } from "react-native-responsive-fontsize";
 
-export const Container = styled.View`
-  flex: 1;
+export const Container = styled.ScrollView`
   padding: 24px;
   background-color: ${({ theme }) => theme.colors.background};
 `;
 
-export const Title = styled.Text`
-  font-size: ${RFValue(24)}px;
+export const Header = styled.View`
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: ${RFPercentage(15)}px;
+  margin-bottom: ${RFPercentage(10)}px;
+`;
+
+export const Logo = styled.Text`
+  font-size: ${RFValue(32)}px;
   font-weight: 900;
   color: ${({ theme }) => theme.colors.primary_dark};
 `;
 
-export const Wrapper = styled.View`
-  margin-top: ${RFPercentage(15)}px;
+export const Form = styled.View`
 `;
 
 export const Illustration = styled.Image`
   width: ${RFValue(200)}px;
   height: ${RFValue(200)}px;
-  align-self: center;
-  margin-bottom: 40px;
 `;
 
 export const TextInput = styled.TextInput`
@@ -40,6 +44,6 @@ export const EmailForgot = styled.Text`
   align-self: flex-end;
   font-size: 15px;
   font-weight: 600;
-  margin-bottom: 8px;
+  margin-bottom: 4px;
   color: ${({ theme }) => theme.colors.primary_dark};
 `;

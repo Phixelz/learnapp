@@ -6,9 +6,10 @@ import {
 } from "react-native";
 import {
   Container,
-  Title,
+  Header,
+  Logo,
   Illustration,
-  Wrapper,
+  Form,
   TextInput,
   Link,
   EmailForgot,
@@ -31,42 +32,45 @@ export function SignIn({ navigation }: { navigation: any }) {
 
   return (
     <Container>
-      <Title>
-        Learn.
-      </Title>
+      <Header>
+        <Logo>
+          Learn.
+        </Logo>
 
-      <Wrapper>
         <Illustration
           resizeMode="contain"
           source={require("../../assets/opendoodles.png")}
         />
+      </Header>
 
-        <TextInput
-          onChangeText={setEmail}
-          placeholder="Digite seu e-mail"
-          placeholderTextColor="#949494"
-        />
+    <Form>
+      <TextInput
+        onChangeText={setEmail}
+        placeholder="Digite seu e-mail"
+        placeholderTextColor="#949494"
+      />
 
-        <Link
-          activeOpacity={0.8}
-          onPress={handleForgotPassword}>
-          <EmailForgot>
-            Esqueceu sua senha?
-          </EmailForgot>
-        </Link>
+      <Link
+        activeOpacity={0.8}
+        onPress={handleForgotPassword}>
+        <EmailForgot>
+          Esqueceu sua senha?
+        </EmailForgot>
+      </Link>
 
-        <TextInput
-          secureTextEntry
-          placeholder="Digite sua senha"
-          placeholderTextColor="#949494"
-        />
+      <TextInput
+        secureTextEntry
+        placeholder="Digite sua senha"
+        placeholderTextColor="#949494"
+      />
+      </Form>
 
-        <Button
-          type="default"
-          onPress={() => navigation.navigate("Home")}
-          title="Entrar"
-        />
-      </Wrapper>
+      <Button
+        type="default"
+        onPress={() => navigation.navigate("Home")}
+        title="Entrar"
+      />
+
     </Container>
   );
 }
