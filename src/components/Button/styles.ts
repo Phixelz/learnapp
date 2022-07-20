@@ -22,8 +22,9 @@ export const CustomButton = styled.TouchableOpacity.attrs({
   `}
 
   ${(props) => props.type === 'link' && css `
-    padding: 16px 0;
-    align-items: flex-start;
+    padding: 0;
+    margin-bottom: 8px;
+    align-items: flex-end;
   `}
 `;
 
@@ -34,6 +35,6 @@ export const ButtonText = styled.Text<ButtonProps>`
 
   ${(props) => props.type === 'link' && css `
     font-size: ${RFValue(15)}px;
-    color: ${({ theme }) => theme.colors.secondary_dark};
+    color: ${({ theme }) => theme.colors.primary_dark};
   `}
 `;
