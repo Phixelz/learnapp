@@ -11,8 +11,7 @@ export const Header = styled.View`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
-
+  padding: 24px 0;
 `;
 
 export const Icon = styled(ShoppingCart)`
@@ -44,7 +43,6 @@ export const Section = styled.Text`
   font-size: 20px;
   font-weight: 700;
   color: ${({ theme }) => theme.colors.title};
-
 `;
 
 export const CategoryList = styled.SectionList.attrs({

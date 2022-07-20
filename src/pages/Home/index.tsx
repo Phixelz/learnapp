@@ -43,9 +43,7 @@ export function Home({ navigation }: { navigation: any }) {
           <Title>Rafaela Meireles</Title>
         </GrettingsView>
 
-        <Perfil
-          onPress={() => navigation.navigate("Perfil")}
-        >
+        <Perfil onPress={() => navigation.navigate("Perfil")}>
           <Avatar
             resizeMode="cover"
             source={require("../../assets/avatar.png")}
@@ -60,10 +58,9 @@ export function Home({ navigation }: { navigation: any }) {
       />
 
       <Wrapper>
-        <LearnProgram
-          onPress={() => navigation.navigate("LearnProgram")}
-        >
+        <LearnProgram onPress={() => navigation.navigate("LearnProgram")}>
           <LearnCard
+            type="default"
             programname="Programa Learn"
             subtitle="Programa de incentivo Learn"
           />
@@ -77,7 +74,7 @@ export function Home({ navigation }: { navigation: any }) {
         </Section>
 
         <HorizontalCards>
-          <Card 
+          <Card
             type="horizontal"
             cardtitle="React Native"
             instructorname="Rayna Curtis"
@@ -102,9 +99,7 @@ export function Home({ navigation }: { navigation: any }) {
 
         <Section>
           <SectionName>Sugestões para você</SectionName>
-          <Suggestions
-            onPress={() => navigation.navigate("Suggestions")}
-          >
+          <Suggestions onPress={() => navigation.navigate("Suggestions")}>
             <Chevron />
           </Suggestions>
         </Section>
@@ -132,6 +127,6 @@ export function Home({ navigation }: { navigation: any }) {
           tag="Programa Learn"
         />
       </Wrapper>
-    </Container >
+    </Container>
   );
 }

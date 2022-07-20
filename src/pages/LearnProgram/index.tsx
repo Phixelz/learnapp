@@ -10,24 +10,26 @@ import {
   Title,
   Description,
 } from '../LearnProgram/styles';
-import { Banner } from "../../components/Banner";
 import { Card } from "../../components/Card";
+import { LearnCard } from "../../components/LearnCard";
 export function LearnProgram({ navigation }: { navigation: any }) {
   return (
     <Container>
       <ScrollView
         showsVerticalScrollIndicator={false}>
         <Header>
-        <Icon
+          <Icon
             onPress={() => navigation.navigate("Home")}
           />
           <ProgramTitle>
             Programa Learn
-          </ProgramTitle> 
+          </ProgramTitle>
         </Header>
 
-        <Banner
+        <LearnCard
+          type="static"
           programname="Learn."
+          subtitle=""
         />
 
         <Title>
